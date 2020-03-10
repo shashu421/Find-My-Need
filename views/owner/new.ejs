@@ -1,0 +1,40 @@
+<%- include("../partials/header.ejs") %>
+
+<div class="ui main container segment">
+    <form class="ui form" action="/findmyneed/owner" method="POST">
+        <h4 class="ui dividing header">Job Information</h4>
+        <div class="field">
+          <label>Job Name</label>
+          <div class="two fields">
+            <div class="field">
+              <input type="text" name="job[name]" placeholder="Worker">
+            </div>
+          </div>
+        </div>
+        <div class="field">
+            <label>Any job details</label>
+            <textarea name="job[desc]"></textarea>
+          </div>
+          <div class="field">
+            <label>Specific Requirements(if any)</label>
+            <textarea rows="2" name="job[req]"></textarea>
+          </div>
+          <div class="field">
+            <label>Approx Salary</label>
+            <div class="ui right labeled input">
+                <label for="amount" class="ui label">$</label>
+                <input type="text" placeholder="Amount" id="amount" name="job[salary]">
+                <div class="ui basic label">.00</div>
+              </div>
+          </div>
+          <div class="field">
+            <label>Image of enterprise</label>
+            <input type="text" placeholder="image here!" name="job[image]">
+          </div>
+          
+          <button class="positive ui button">Submit</button>
+      </form>
+    
+</div>
+
+<%- include("../partials/footer.ejs") %>

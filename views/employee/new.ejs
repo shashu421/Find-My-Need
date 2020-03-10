@@ -1,0 +1,20 @@
+<%- include("../partials/header.ejs") %>
+
+
+<div class="ui container">
+        <div style="width: 30%; margin: 50px auto">
+            <h2 style="text-align:center">Add your Phone number</h2>
+            <form action="/findmyneed/employee/<%= job._id %>" method="POST">
+                <div class="ui form">
+                    <input class="" type="text" name="phonenumber[phonenumber]" placeholder="text">
+                </div>
+                <div class="ui form">
+                    <button class="ui primary button">Submit</button>
+                </div>   
+            </form>
+            <a href="/findmyneed/employee">Go back</a>
+        </div>
+</div>
+
+
+<%- include("../partials/footer.ejs") %>

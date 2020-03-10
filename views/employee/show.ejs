@@ -1,0 +1,27 @@
+<%- include("../partials/header.ejs") %>
+
+<div class="ui main container segment">
+    <div class="ui huge header">
+        <h2>Recent jobs</h2>
+    </div>
+    <hr>
+        <div class="ui three column grid">
+            <% jobs.forEach(function(job){ %>
+                <div class="column">
+                    <div class="ui segment">
+                        <h2> <%= job.name %> </h2>
+                        <img src="<%=job.image%>">
+                        <p class="ui item">
+                        <%= job.desc %>
+                        </p>
+                        Salary is <B><%= job.salary %></B>  per month<br>
+                        <a href="/findmyneed/employee/show/<%=job._id %>"><button class="ui primary button">Send job request</button></a> 
+                        <a href="/findmyneed/ab"><button><span><i class="volume up icon"></i></span></button></a>
+                    </div>  
+                </div>      
+            <% }); %>  
+        </div>
+        <a href="/findmyneed"><button class="positive ui button">GO BACK</button></a>
+</div>
+<%- include("../partials/footer.ejs") %>
+

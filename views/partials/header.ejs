@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            FindMyNeed
+        </title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    </head>
+    <body>
+        <!-- <div class="ui fixed inverted menu">
+            <div class="ui container">
+                <div class="header item"><i class="code icon"></i><a href="/">Findmyneed</a></div>
+                <a href="/" class="item">Home</a>
+                <a href="" class="pull-right item">Login</a>
+            </div>  
+        </div> -->
+    <div class="ui inverted segment">
+        <div class="ui inverted secondary menu">
+            <a class="active item" href="/">
+            Home
+            </a>
+            <a class="item" href="/findmyneed/owner">
+            Owner
+            </a>
+            <a class="item" href="/findmyneed/employee">
+            Employee
+            </a>
+
+            <div class="right menu">
+            <% if(!currentUser){ %>
+            <a class="ui item" href="/login">
+                Login
+            </a>
+            <a class="ui item" href="/register">
+                Signup
+            </a>
+            <% }else{ %>
+                    <a class="ui item" href="/findmyneed/profile">Signed is as <%= currentUser.username %></a>
+            <a class="ui item" href="/logout">
+                Logout
+            </a>
+            <% } %>
+            </div>
+        </div>
+         </div>
+
+    

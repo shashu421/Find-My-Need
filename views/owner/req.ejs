@@ -1,0 +1,18 @@
+<%- include("../partials/header.ejs") %>
+<div class="ui main container segment">
+    <div class="ui huge header">
+        <h2>Recent phonenumbers</h2>
+    </div>
+    <hr>
+        <div class="ui three column grid">
+            <% phone.forEach(function(phone){ %>
+                <div class="column">
+                    <ul>
+                        <li><B>Call now</B> - <a href="#"><%= phone.phonenumber %></a></li>
+                    </ul>
+                </div>      
+            <% }); %>  
+        </div>
+        <a href="/findmyneed/owner"><button class="positive ui button">GO BACK</button></a>
+</div>
+<%- include("../partials/footer.ejs") %>
