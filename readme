@@ -1,1 +1,5 @@
-
+This webapp is made up on nodejs using express framework and mongo database this will require some npm module dependencies.
+1) So clone it
+2) if you have visual code , open the folder in visual code
+3) open terminal
+4) Give the command - node app.js
