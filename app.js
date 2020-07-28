@@ -120,7 +120,7 @@ app.post("/findmyneed/employee/:id",function(req,res){
 
 app.get("/findmyneed/ab",function(req,res){
     //it will convert text inti speech
-    say.speak("Aadha padha kisne padha jisme taakat sabse jyada", 'Shashank');
+    say.speak("Ration store , Salary is 5000 per month", 'Shashank');
 });
 //==========================$$
 //AUTH ROUTES
